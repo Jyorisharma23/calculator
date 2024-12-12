@@ -1,0 +1,95 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+/* Calculator styling */
+.calculator {
+    border: 1px solid #717371;
+    padding: 20px;
+    border-radius: 16px;
+    background: #222;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+}
+
+/* Input styling */
+input[type="text"] {
+    width: calc(100% - 20px); /* Adjust width to account for padding */
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: #333;
+    color: #fff;
+    font-size: 50px;
+    text-align: right;
+    border-radius: 8px;
+    box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+/* Button styling */
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: #444;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:active {
+    background-color: #555;
+    transform: scale(0.95);
+}
+
+button.operator {
+    background-color: rosybrown; /* Yellow for operators */
+    color: #fff;
+}
+
+button.operator:active {
+    background-color: rosybrown; /* Darker yellow on click */
+}
+
+button.equalBtn {
+    background-color: rosybrown; /* Orange for equals */
+    color: white;
+    grid-column: span 4;
+}
+
+button.equalBtn:active {
+    background-color: rosybrown; /* Darker orange on click */
+}
+
+/* Layout for calculator buttons */
+.calculator div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+
+
+
